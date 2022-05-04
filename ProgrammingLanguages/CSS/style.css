@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Barlow;
+    src: url(Barlow-Regular.ttf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: Barlow;
+}
+
+body {
+    background-color: #edeae7;
+}
+
+.container {
+    padding: 0 100px;
+}
+
+header {
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    
+}
+
+#intro {
+    text-align: center;
+    color: #2a2e30;
+    margin-bottom: 50px;
+}
+
+#intro h1 {
+    font-size: 39px;
+    margin-bottom: 8px;
+}
+
+#intro span {
+    text-decoration: underline;
+}
+
+#intro p {
+    font-size: 25px;
+}
+
+#langs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    background-color: #edeae7;
+    border-radius: 10px;
+}
+
+.card .lang-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.card .lang-name {
+    color: #f46530;
+}
+
+.card .lang-info {
+    color: #2a2e30;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
