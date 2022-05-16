@@ -50,14 +50,38 @@ input[type='submit'] {
 
 .task {
     display: flex;
-    padding: 5px 0;
+    padding: 7px;
     font-size: 19px;
     width: 70%;
+    background-color: #f2f2f2;
+    margin-bottom: 4px;
 }
 
-.task .icons {
+.task .icon {
     margin-left: auto;
-   
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+}
 
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 4px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input[type='submit'] {
+        width:29%;
+    }
+
+    .task {
+        width:100%;
+    }
 }
 
