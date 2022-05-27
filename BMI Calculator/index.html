@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+        <h1>BMI Calculator</h1>
+
+    <main>
+        <div>
+            <div id="tabs">
+                <a href="" class="tab" id="tab-metric">Metric</a>
+                <a href="" class="tab" id="tab-imperial">Imperial</a>
+            </div>
+            <div>
+                <form action="" id="metric">
+                    <h2>Metric system </h2>
+                    <div>
+                        <label for="">Height (cm)</label>
+                        <input type="text" name="" id="height">
+                    </div>
+                    <div>
+                        <label for="">Weight (kgs)</label>
+                        <input type="text" name="" id="weight">
+                    </div>
+                    <input type="submit" value="Calculate">
+                    <h2 id="results"></h2>
+                </form>
+        
+                <form action="" id="imperial">
+                    <h2>Imperial system </h2>
+                    <div>
+                        <label for="">Height</label>
+                        <div id="imperial-height">
+                            <input type="text" name="" id="feet" placeholder="feet">
+                            <input type="text" name="" id="inches" placeholder="inches">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Weight (lb)</label>
+                        <input type="text" name="" id="Pound">
+                    </div>
+                    <input type="submit" value="Calculate">
+                    <h2 id="results"></h2>
+                </form>
+        
+            </div>
+        </div>
+        <div>
+            <h2> BMI Categories</h2>
+
+            <ul>
+                <li>Underweight <span>: < 18.5</span></li>
+                <li>Normalweight <span>: 18.5 - 24.9</span></li>
+                <li>Overweight <span>: 25 - 29.9</span></li>
+                <li>Obesity <span>: >= 30</span></li>
+            </ul>
+        </div>
+    </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+    
+</html>

@@ -5,6 +5,7 @@ let tasks = document.querySelector('#tasks')
 const deleteTask =  (e) => {
     let task = e.target.parentElement
     tasks.removeChild(task)
+    checkForTasks()
 }
 
 // create a new task *called function
@@ -22,6 +23,23 @@ const addTask = (e) => {
     task.appendChild(button)
     tasks.appendChild(task)
     form.reset()
+    checkForTasks()
 }
+
+const checkForTasks = () => {
+    let count = document.querySelector('#count')
+    let message = document.querySelector('#message')
+    if(tasks.children.length === 0) { 
+        count.textContent = 'Count: 0'
+        message.textContent = 'You do not have any tasks at the moment.'
+        message.style.display = 'block'
+    } else {
+        message.style.display = 'none'
+        count.textContent = `Count: ${tasks.children.length}`
+    }   
+
+}
+
+checkForTasks()
 
 form.addEventListener('submit', addTask)

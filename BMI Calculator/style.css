@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Hind-Siliguru;
+    src: url(HindSiliguri-Regular.ttf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Hind-Siliguru;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding:0 150px;
+
+}
+
+main > form, main > div {
+    width: 100%;
+    padding: 0 20px;
+    
+}
+
+main form > div {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main form div input {
+    /* float: right; */
+    width: 70%;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#imperial-height {
+    width: 70%;
+}
+
+#feet, #inches {
+    width: 49%;
+
+}
+
+main form input[type='submit'] {
+    padding: 6px 7px;
+    background-color: #117575;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+}
+ 
+main li {
+    list-style: none;
+    font-size: 20px;
+    border-bottom: 1px solid #c2bdbd;
+    padding: 6px;
+}
+
+#tabs {
+    border-bottom: 1px solid #c2bdbd;
+}
+
+#tabs a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 5px;
+    color: #117575
+}
+
+#tab-metric {
+    background-color: #c2bdbd;
+}
+
+#imperial {
+    display: none;
+}
+
